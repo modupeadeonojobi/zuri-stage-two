@@ -213,31 +213,31 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form id="contactForm" name="contactForm" method="POST">
 					<fieldset>
 
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
+						   <input type="text" value="" size="35" id="contactName" name="name">
                   </div>
 
                   <div>
 						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+						   <input type="text" value="" size="35" id="contactEmail" name="email">
                   </div>
 
                   <div>
 						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+						   <input type="text" value="" size="35" id="contactSubject" name="subject">
                   </div>
 
                   <div>
                      <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="message"></textarea>
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
+                     <button class="submit" type="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
@@ -293,10 +293,13 @@
       </div>
 
    </footer> 
+
+
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
+   <script src="js/sendMail.js"></script>
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
