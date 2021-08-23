@@ -11,8 +11,6 @@ document.addEventListener("submit", (e) => {
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
    
-
-    console.log(formProps, 'tfygkhjkl')
       spinner.style.display = "inline";
 
     fetch('https://form-zuri-stage-two.herokuapp.com/api/form', {
